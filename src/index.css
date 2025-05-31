@@ -1,0 +1,93 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --background-color: #ffffff;
+  --text-color: #213547;
+  --primary-color: #004085;
+  --hero-bg: linear-gradient(to bottom, #f8f9fa, #e6ebf2);
+  --card-bg: #ffffff;
+  --text-muted: #6c757d;
+
+  color: var(--text-color);
+  background-color: var(--background-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body, html, #root {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero-section {
+  background: var(--hero-bg);
+  padding-bottom: 80px;
+  color: var(--text-color);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+/* Buttons with hover */
+.hover-effect {
+  transition: all 0.3s ease-in-out;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+}
+
+.hover-effect:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border-color: var(--primary-color);
+}
+
+/* Cards */
+.card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease-in-out;
+  color: var(--text-color);
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Muted text */
+.text-muted {
+  color: var(--text-muted);
+}
+
+/* Section with background light variant */
+.bg-section {
+  background-color: var(--card-bg);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
