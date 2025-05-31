@@ -25,7 +25,7 @@ export default function App() {
       <section className="container py-5">
         <h2 className="h2 fw-bold mb-3">What I Offer</h2>
         <p className="mb-4 fs-5">
-          Clean, modern, and responsive brochure websites built with React and Vite — perfect for portfolios, small businesses, and creative professionals.
+          I create clean, modern, and responsive brochure websites using React and Vite — ideal for portfolios, small businesses, and creatives.
         </p>
         <ul className="list-unstyled fs-5">
           <li>✅ Mobile-friendly layout with Bootstrap</li>
@@ -47,7 +47,7 @@ export default function App() {
                 <div className="card-body">
                   <h3 className="card-title fs-5 fw-semibold">katherinebreed.link</h3>
                   <p className="card-text fs-6">
-                    Static HTML/CSS website showcasing design, layout, and clean structure.
+                    Designed and built from scratch using HTML, CSS, and PHP, this site demonstrates my eye for layout and minimalist design. It also features a working contact form and CMS integration (SilverStripe). 
                   </p>
                   <a
                     href="https://katherinebreed.link"
