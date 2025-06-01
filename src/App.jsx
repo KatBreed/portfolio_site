@@ -32,7 +32,7 @@ export default function App() {
           <li>✅ Built with React + Vite for blazing-fast performance</li>
           <li>✅ Integration of media and social media links</li>
           <li>✅ Optional contact form available</li>
-          <li>✅ Deployed on free hosting using Netlify, Vercel, Cloudflare Pages, or GitHub Pages (also open to discuss your preferred host)</li>
+          <li>✅ Deployed on free hosting using Netlify, Vercel, Cloudflare Pages, or GitHub Pages (also open to your preferred host)</li>
           <li>✅ Full source code access via GitHub</li>
         </ul>
       </section>
