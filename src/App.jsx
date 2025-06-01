@@ -32,7 +32,7 @@ export default function App() {
           <li>✅ Built with React + Vite for blazing-fast performance</li>
           <li>✅ Integration of media and social media links</li>
           <li>✅ Optional contact form available</li>
-          <li>✅ Deployed on Netlify, Vercel, Cloudflare Pages, GitHub Pages for free or your preferred host at cost if cost applies</li>
+          <li>✅ Deployed on free hosting using Netlify, Vercel, Cloudflare Pages, or GitHub Pages (also open to discuss your preferred host)</li>
           <li>✅ Full source code access via GitHub</li>
         </ul>
       </section>
@@ -95,7 +95,7 @@ export default function App() {
         <div className="container">
           <h2 className="h2 fw-bold mb-3">Let’s Build Something</h2>
           <p className="mb-4 fs-5">
-            Ready to launch your site or revamp your online presence? I'm available via Fiverr or direct contact.
+            Ready to launch your site or revamp your online presence? I'm available via Fiverr (for now contact me through Fiverr).
           </p>
           <a
             href="https://www.fiverr.com/katbreed"
