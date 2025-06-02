@@ -3,7 +3,7 @@ import HeroSection from "./components/HeroSection";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import About from "./components/About";
-import ContactCTA from "./components/ContactCTA";
+import ContactCTA from "./components/ContactSection";
 import "./App.css";
 
 export default function App() {
@@ -13,7 +13,7 @@ export default function App() {
       <Services />
       <Portfolio />
       <About />
-      <ContactCTA />
+      <ContactSection />
     </div>
   );
 }

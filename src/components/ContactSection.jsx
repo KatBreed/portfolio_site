@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ContactCTA() {
+export default function ContactSection() {
   return (
     <section className="section bg-primary text-white text-center">
       <h2>Let’s Collaborate</h2>
