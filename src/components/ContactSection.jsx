@@ -1,4 +1,5 @@
 import React from "react";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function ContactSection() {
   return (
@@ -13,6 +14,7 @@ export default function ContactSection() {
       >
         Hire on Fiverr
       </a>
+    
     </section>
   );
 }
