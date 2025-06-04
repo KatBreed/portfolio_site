@@ -18,3 +18,4 @@ Build with:
 
 ```bash
 npm run build
+```

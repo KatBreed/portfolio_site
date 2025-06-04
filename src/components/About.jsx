@@ -6,10 +6,15 @@ export default function About() {
     <section className="section">
       <h2>About Me</h2>
       <div className="about-content">
-        <img src="/images/ski-selfie.jpg" alt="Katherine in Ski Gear sking in Mt Hutt" className="about-photo" />
+        <img
+          src="/images/ski-selfie.jpg"
+          alt="Katherine in Ski Gear sking in Mt Hutt"
+          className="about-photo"
+        />
       </div>
       <p className="text-muted">
-        I'm a frontend developer based in New Zealand, passionate about intuitive design, speed optimization, and accessibility.
+        I'm a frontend developer based in New Zealand, passionate about
+        intuitive design, speed optimization, and accessibility.
       </p>
       <a
         href="https://www.linkedin.com/in/katherine-breed-2b879626b"

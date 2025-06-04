@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
   line-height: 1.6;
   background: #fff;
@@ -66,7 +66,9 @@ body {
   border-radius: 999px;
   font-weight: 700;
   box-shadow: 0 3px 6px rgba(13, 110, 253, 0.4);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   cursor: pointer;
   user-select: none;
   text-decoration: none;
@@ -89,7 +91,9 @@ body {
   border-radius: 999px;
   font-weight: 700;
   box-shadow: 0 3px 6px rgba(13, 110, 253, 0.4);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   cursor: pointer;
   user-select: none;
   text-decoration: none;
@@ -156,7 +160,9 @@ body {
   text-align: center;
 }
 
-h1, h2, h5 {
+h1,
+h2,
+h5 {
   margin-bottom: 1rem;
 }
 
@@ -231,7 +237,7 @@ h1, h2, h5 {
   max-width: 150px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .brand-logo {
@@ -253,6 +259,3 @@ h1, h2, h5 {
   color: #0a66c2;
   transform: scale(1.1);
 }
-
-
-

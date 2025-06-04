@@ -14,7 +14,6 @@ export default function ContactSection() {
       >
         Hire on Fiverr
       </a>
-    
     </section>
   );
 }

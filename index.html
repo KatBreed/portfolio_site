@@ -6,22 +6,38 @@
     <title>Katherine Breed - Frontend Developer</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="src/assets/favicon_KB.png" />
 
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K5J5MLRDJJ"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K5J5MLRDJJ"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-K5J5MLRDJJ');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-K5J5MLRDJJ");
     </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Cloudflare Web Analytics -->
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "0cf2deedad884ce6b5a564c7876361bf"}'
+    ></script>
+    <!-- End Cloudflare Web Analytics -->
   </body>
 </html>
