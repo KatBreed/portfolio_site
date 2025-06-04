@@ -11,8 +11,8 @@ export default function Portfolio() {
                 alt="Screenshot of katherinebreed.link website"
                 className="portfolio-thumbnail"
             />
-          <h5>katherinebreed.link</h5>
-          <p>A custom site built with HTML, CSS, and PHP, featuring a CMS and working contact form.</p>
+          <h5>New Zealand Stringed Instruments</h5>
+          <p>A custom site built for my Diploma with HTML, CSS, and PHP, featuring a CMS and working contact form.</p>
           <a href="https://katherinebreed.link" target="_blank" rel="noopener noreferrer" className="btn-outline">
             View Project
           </a>
