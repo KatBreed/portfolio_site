@@ -4,7 +4,7 @@ import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import ContactSection from "./components/ContactSection";
-import "./index.css";
+import "./App.css";
 
 export default function App() {
   return (

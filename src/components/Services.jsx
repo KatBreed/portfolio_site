@@ -9,7 +9,7 @@ export default function Services() {
         businesses, portfolios, and creatives.
       </p>
       <div className="card">
-        <ul className="services-list">
+        <ul className="checklist">
           <li>Responsive design using Bootstrap</li>
           <li>Lightning-fast builds with React + Vite</li>
           <li>Integrated contact forms & social links</li>
