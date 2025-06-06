@@ -1,21 +1,25 @@
+/* === Root Variables === */
 :root {
   --primary-color: #0d6efd;
   --primary-color-hover: #0b5ed7;
   --light-bg: #f8f9fa;
   --card-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
   --border-radius: 1rem;
+
   --btn-border-radius: 999px;
   --btn-padding-vertical: 0.75rem;
   --btn-padding-horizontal: 1.5rem;
   --btn-light-padding-horizontal: 2.5rem;
+
   --font-family: "Inter", sans-serif;
   --text-muted-color: #6c757d;
+
   --btn-light-gradient: linear-gradient(135deg, #6ec1ff 0%, var(--primary-color) 100%);
   --shadow-light: rgba(13, 110, 253, 0.4);
   --shadow-light-hover: rgba(13, 110, 253, 0.6);
 }
 
-/* Box Sizing Reset */
+/* === Global Reset & Base Styles === */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -26,9 +30,8 @@ body {
   line-height: 1.6;
   background: #fff;
   color: #333;
-} 
+}
 
-/* Root container */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -36,16 +39,9 @@ body {
   text-align: center;
 }
 
-/* Hero Section */
-.hero-section {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2rem;
-  background: var(--light-bg);
+/* === Typography === */
+h1, h2, h5 {
+  margin-bottom: 1rem;
 }
 
 .hero-title {
@@ -60,7 +56,40 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Buttons */
+.text-muted {
+  color: var(--text-muted-color);
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* === Page Layout === */
+.page {
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+  max-width: 960px;
+  margin: auto;
+  padding: 4rem 2rem;
+}
+
+/* Example for home page specific styles */
+.home-page {
+  background: var(--light-bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* === Buttons === */
 .btn {
   display: inline-block;
   padding: var(--btn-padding-vertical) var(--btn-padding-horizontal);
@@ -92,9 +121,7 @@ body {
   padding: var(--btn-padding-vertical) var(--btn-light-padding-horizontal);
   font-weight: 700;
   box-shadow: 0 3px 6px var(--shadow-light);
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-decoration: none;
 }
 
@@ -107,7 +134,6 @@ body {
   outline: none;
 }
 
-/* Outline Button */
 .btn-outline {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
@@ -126,53 +152,7 @@ body {
   outline: none;
 }
 
-/* Sections */
-.section {
-  padding: 4rem 2rem;
-  max-width: 960px;
-  margin: auto;
-}
-
-.bg-light {
-  background: var(--light-bg);
-}
-
-.bg-primary {
-  background: var(--primary-color);
-}
-
-.text-white {
-  color: #fff;
-}
-
-.text-muted {
-  color: var(--text-muted-color);
-}
-
-.text-center {
-  text-align: center;
-}
-
-h1,
-h2,
-h5 {
-  margin-bottom: 1rem;
-}
-
-/* Grid layout */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-@media (max-width: 768px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Card */
+/* === Cards === */
 .card {
   background: #fff;
   padding: 2rem;
@@ -183,7 +163,7 @@ h5 {
   justify-content: space-between;
 }
 
-/* Services Section */
+/* === Lists === */
 ul.checklist {
   list-style: none;
   padding-left: 0;
@@ -203,8 +183,20 @@ ul.checklist li::before {
   font-weight: bold;
 }
 
+/* === Grid Layout === */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
 
-/* Portfolio Thumbnails */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === Portfolio Thumbnails === */
 .portfolio-thumbnail {
   width: 100%;
   height: auto;
@@ -214,7 +206,7 @@ ul.checklist li::before {
   object-fit: cover;
 }
 
-/* About Section */
+/* === About Section (utility classes) === */
 .about-section {
   display: flex;
   flex-direction: column;
@@ -245,7 +237,7 @@ ul.checklist li::before {
   opacity: 0.9;
 }
 
-/* LinkedIn Icon */
+/* === Icons (LinkedIn) === */
 .linkedin-icon {
   background: white;
   padding: 0.5rem;
@@ -263,7 +255,7 @@ ul.checklist li::before {
   transform: scale(1.1);
 }
 
-/* Scroll Indicator */
+/* === Scroll Indicator === */
 .scroll-indicator {
   margin-top: 2rem;
   font-size: 0.9rem;
@@ -271,7 +263,7 @@ ul.checklist li::before {
   opacity: 0.8;
 }
 
-/* Logo Animations */
+/* === Logo Animations === */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -302,7 +294,18 @@ ul.checklist li::before {
   }
 }
 
-/* Misc */
-.read-the-docs {
-  color: #888;
+/* === Animations === */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* === Utility Background Colors === */
+.bg-light {
+  background: var(--light-bg);
+}
+
+.bg-primary {
+  background: var(--primary-color);
 }
