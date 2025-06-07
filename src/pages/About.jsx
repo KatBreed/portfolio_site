@@ -1,30 +1,24 @@
 import React from "react";
-import { FaLinkedin } from "react-icons/fa";
+import usePageTitle from "../hooks/usePageTitle";
 
 export default function About() {
+  usePageTitle("About | Katherine Breed");
+
   return (
-    <section className="section">
-      <h2>About Me</h2>
-      <div className="about-content">
+    <div className="page py-5 container">
+      <h2 className="mb-4">About Me</h2>
+
+      <div className="about-content mb-4 justify-content-center">
         <img
           src="/images/ski-selfie.jpg"
-          alt="Katherine in Ski Gear sking in Mt Hutt"
-          className="about-photo"
+          alt="Katherine in ski gear skiing in Mt Hutt"
+          className="img-fluid about-photo"
         />
       </div>
-      <p className="text-muted">
-        I'm a frontend developer based in New Zealand, passionate about
-        intuitive design, speed optimization, and accessibility.
+
+      <p className="text-muted fs-5">
+        I'm a frontend developer based in New Zealand, passionate about intuitive design, speed optimization, and accessibility.
       </p>
-      <a
-        href="https://www.linkedin.com/in/katherine-breed-2b879626b"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="linkedin-icon"
-        aria-label="Visit my LinkedIn profile"
-      >
-        <FaLinkedin size={42} />
-      </a>
-    </section>
+    </div>
   );
 }
