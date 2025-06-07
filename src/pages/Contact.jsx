@@ -40,7 +40,7 @@ export default function Contact() {
           <input
             type="email"
             id="email"
-            name="_replyto"
+            name="email"
             className="form-control"
             placeholder="you@example.com"
             required
