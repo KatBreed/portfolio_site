@@ -196,6 +196,14 @@ ul.checklist li::before {
   }
 }
 
+.display-6 {
+    font-size: 1.75rem;
+}
+
+.lead {
+    font-size: 1.125rem;
+}
+
 /* === Portfolio Thumbnails === */
 .portfolio-thumbnail {
   width: 100%;
