@@ -1,23 +1,53 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import usePageTitle from "../hooks/usePageTitle";
 
 export default function Contact() {
   usePageTitle("Contact");
 
+  const form = useRef();
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(null);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        import.meta.env.VITE_EMAILJS_USER_ID
+      )
+      .then(
+        () => {
+          setSubmitted(true);
+          form.current.reset();
+        },
+        (err) => {
+          console.error(err);
+          setError("Failed to send message. Please try again.");
+        }
+      );
+  };
+
   return (
     <div className="page py-5 container">
       <h2 className="mb-4">Get in Touch</h2>
+
+      {submitted && (
+        <div className="alert alert-success mb-4">Thanks! Your message has been sent.</div>
+      )}
+
+      {error && (
+        <div className="alert alert-danger mb-4">{error}</div>
+      )}
 
       <p className="mb-4 text-muted">
         Whether you want to discuss a project or just say hello, feel free to reach out!
       </p>
 
-      <form
-        action="https://formspree.io/f/xeokergb" // Replace with your Formspree or other endpoint
-        method="POST"
-        className="needs-validation"
-        noValidate
-      >
+      <form ref={form} onSubmit={sendEmail} className="needs-validation" noValidate>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">
             Name <span className="text-danger">*</span>
@@ -25,7 +55,7 @@ export default function Contact() {
           <input
             type="text"
             id="name"
-            name="name"
+            name="user_name"
             className="form-control"
             placeholder="Your full name"
             required
@@ -40,7 +70,7 @@ export default function Contact() {
           <input
             type="email"
             id="email"
-            name="email"
+            name="user_email"
             className="form-control"
             placeholder="you@example.com"
             required
