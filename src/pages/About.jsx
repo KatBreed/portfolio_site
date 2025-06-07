@@ -8,12 +8,11 @@ export default function About() {
     <div className="page py-5 container">
       <h2 className="mb-4">About Me</h2>
 
-      <div className="about-content mb-4 text-center">
+      <div className="about-content mb-4 justify-content-center>
         <img
           src="/images/ski-selfie.jpg"
           alt="Katherine in ski gear skiing in Mt Hutt"
-          className="img-fluid rounded about-photo"
-          style={{ maxWidth: "300px" }}
+          className="img-fluid about-photo"
         />
       </div>
 
