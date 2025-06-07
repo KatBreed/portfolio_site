@@ -13,7 +13,7 @@ export default function Contact() {
       </p>
 
       <form
-        action="https://formspree.io/f/your-form-id" // Replace with your Formspree or other endpoint
+        action=:https://formspree.io/f/xeokergb" // Replace with your Formspree or other endpoint
         method="POST"
         className="needs-validation"
         noValidate
